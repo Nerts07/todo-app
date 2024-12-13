@@ -1,0 +1,163 @@
+.todo-div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    max-height: 100vh;
+    min-height: 1vh;
+    width: 95vw;
+    max-width: 720px;
+    min-width: 15px;
+    border-radius: 35px;
+    gap: 10px; 
+    background-color:rgb(223, 211, 247);
+    box-shadow: 2px 2px 15px 5px rgb(177, 152, 230);
+}
+
+.input-section-child
+{
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    min-height: 10px;
+    width: 100%;
+    place-content: center;
+    justify-content:space-evenly ;
+}
+
+.input-section-parent
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    min-height: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.just-input
+{
+    display: flex;
+    background-color:rgb(210, 188, 255) ;
+    border-style: none;
+    border-radius: 15px;
+    width: 70%;
+    min-height: 10px;
+    box-shadow: 2px 2px 18px 3px rgb(178, 143, 255);
+}
+.just-input:hover
+{
+    transition: 0.3s;
+    background-color:rgb(206, 182, 255) ;
+    box-shadow: 2px 2px 18px 3px rgb(183, 150, 255);
+}
+.just-input:not(:hover)
+{
+    transition: 0.3s;
+    background-color:rgb(210, 188, 255) ;
+    box-shadow: 2px 2px 18px 3px rgb(178, 143, 255);
+}
+
+.just-input::placeholder
+{
+    color: rgb(80, 34, 179);
+    font-size:large;
+    font-weight: 700;
+    text-align: center;
+}
+
+.form-submit
+{
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    border-radius: 15px;
+    background-color:rgb(160, 118, 249) ;
+    box-shadow: 2px 2px 18px 3px rgb(178, 143, 255);
+    border-style: none;
+    place-content: center;
+    align-items: center;
+}
+
+.sub-line
+{
+    margin-top: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(204, 181, 255);
+}
+
+.todo-list-section-parent
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-color: rgb(223, 211, 247) rgb(223, 211, 247);
+    scrollbar-width:none;
+    margin-top: 5px;
+}
+
+.todo-list-section-child
+{
+
+    margin-top: 15px;
+    box-shadow: 2px 2px 18px 4px rgb(160, 118, 249);
+    border-radius: 10px;
+    position:relative;
+    height: 200px;
+    max-width: 900px;
+    width: 300px;
+    background-color: rgb(101, 40, 247);
+}
+
+.todo-list-card-text-section{
+    display: flex;
+    justify-content:center ;
+    overflow-y: scroll;
+    scrollbar-color: rgb(198, 169, 255) rgb(198, 169, 255);
+    scrollbar-width:none;
+    height: 150px;
+    /* align-items: center; */
+    font-size: xx-large;
+    font-weight: 700;
+
+}
+.option-div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    height: 50px;
+}
+.delete-button
+{
+    width: 100px;
+    height: 40px;
+    border-style: none;
+    background-color: rgb(84, 16, 243);
+    border-radius: 5px;
+}
+
+.delete-button:hover
+{
+    transition: 0.2s;
+    background-color: rgb(61, 2, 201);
+}
+
+.delete-button:not(:hover)
+{
+    transition: 0.2s;
+    background-color: rgb(84, 16, 243);
+}
