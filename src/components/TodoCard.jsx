@@ -9,6 +9,8 @@ function TodoCard()
 
     function deleteItem(index)
     {
+
+        
         const updateTodo = todos.filter(function(_, i)
         {
             return i !== index;

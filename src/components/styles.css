@@ -111,6 +111,7 @@
 {
 
     margin-top: 15px;
+    margin-bottom: 15px;
     box-shadow: 2px 2px 18px 4px rgb(160, 118, 249);
     border-radius: 10px;
     position:relative;
@@ -131,6 +132,15 @@
     font-size: xx-large;
     font-weight: 700;
 
+}
+.completed-text
+{
+    height: 150px;
+    /* align-items: center; */
+    color: rgb(166, 112, 196);
+    font-size: medium;
+    font-weight: 600;
+    position: absolute;
 }
 .option-div
 {

@@ -5,6 +5,7 @@ function TodoList(props)
         <>
         <div style={{backgroundColor: complete===false ? '#6528F7' : '#D7BBF5'}} className="todo-list-section-child">
             <div className="todo-list-card-text-section">
+                {complete && <p className="completed-text">completed!</p>}
                 <p>{text}</p>    
             </div>
             <div className="option-div">

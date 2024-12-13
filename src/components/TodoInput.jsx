@@ -21,7 +21,7 @@ function TodoInput(props)
         e.preventDefault();
         console.log(newTodo);
         
-        if (newTodo.trim() !== '') {
+        if (newTodo.trim !== "") {
             setNewTodos([...todos, { text: newTodo.trim(), complete: false }]);
             setNewTodo('');
         }
