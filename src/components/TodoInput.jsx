@@ -21,8 +21,8 @@ function TodoInput(props)
         e.preventDefault();
         console.log(newTodo);
         
-        if (newTodo.trim !== '') {
-            setNewTodos((task)=> [...task, newTodo]);
+        if (newTodo.trim() !== '') {
+            setNewTodos([...todos, { text: newTodo.trim(), complete: false }]);
             setNewTodo('');
         }
     }

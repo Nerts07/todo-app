@@ -1,11 +1,10 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import TodoInput from "./TodoInput";
 import TodoList from "./TodoList";
 import './styles.css';
 
 function TodoCard()
 {
-
     const [todos, setNewTodos] = useState([]);
 
     function deleteItem(index)
@@ -16,18 +15,24 @@ function TodoCard()
         })
         setNewTodos(updateTodo);
     }
+    function handleComplete(index) {
+        const updatedTodo = todos.map((todo, i) => 
+            i === index ? { ...todo, complete: !todo.complete } : todo
+        );
+        setNewTodos(updatedTodo);
+    }
+
 
     function iter()
     {
-        return todos.map((task, index) =>
-        task !== '' 
-        ? 
+        return todos.map((todo, index) =>
         <TodoList 
         key={index}
-        text={task} 
+        text={todo.text} 
         deleteHandle={() => deleteItem(index)}
+        completeHandle={() => handleComplete(index)}
+        complete={todo.complete}
         />
-        : null
         )
     }
 
@@ -44,6 +49,10 @@ function TodoCard()
         </div>
         </>
     );
+}
+
+const styles = {
+
 }
 
 export default TodoCard;
