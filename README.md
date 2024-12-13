@@ -1,8 +1,7 @@
-# React + Vite
+# React TODO application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+URL to see it: [https://elegant-strudel-0e8d00.netlify.app/](https://todolist-withcache.netlify.app/)
 
-Currently, two official plugins are available:
+or clone this repo, and do 'npm install' to install all depends and run 'npm run dev' be sure that node.js is already installed on your pc
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+if node.js lacks on your pc: 1 - download chocolatey from https://chocolatey.org/install (if you are on windows 10/11) 2 - then type in powershell: choco install nodejs --version="23.3.0" 3 - open cmd and be sure that node.js is installed: node -v # should print 23
